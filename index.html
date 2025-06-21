@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login</title>
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="./assets/css/estilo.css"/>
+
 </head>
+
 <body>
+
   <div class="login-container">
+
     <div class="logos">
+
       <img src="./assets/logo/ktn_png.png" alt="Logo 1" />
       <span class="arrow">⬌</span>
-      <img src="./assets/logo/logo_generico.jpg" alt="Logo 2" />
+      <img src="./assets/logo/meu_cafe.png" alt="Logo 2" />
+
     </div>
+
     <label for="username">Usuário</label>
     <input type="text" id="username" placeholder="Digite seu usuário">
 
@@ -21,13 +30,17 @@
     <input type="password" id="password" placeholder="Digite sua senha">
 
     <div class="buttons">
+
       <button class="btn-login" onclick="validarLogin()">Login</button>
       <button class="btn-forgot" onclick="alert('Contate o suporte.')">Esqueci minha senha</button>
+
     </div>
 
     <div id="mensagem" class="message"></div>
+    
   </div>
 
-  <script src="script.js"></script>
+  <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
