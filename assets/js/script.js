@@ -9,7 +9,7 @@ function validarLogin() {
 
     // Redireciona após 1 segundo para a tela principal
     setTimeout(() => {
-      window.location.href = "../homepage/index.html";
+      window.location.href = "/homepage/index.html/";
     }, 1000);
 
   } else {
