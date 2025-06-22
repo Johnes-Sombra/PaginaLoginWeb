@@ -19,14 +19,14 @@ Página de Login simples desenvolvida com tecnologias web modernas, apresentando
 
 ## 📁 Estrutura do Projeto
 
-```plaintext
+
+```
 PaginaLoginWeb/
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── logo/
-├── homepage/
-└── arquivos principais
+PaginaLoginWeb/assets/
+PaginaLoginWeb/assets/css/
+PaginaLoginWeb/assets/js/
+PaginaLoginWeb/assets/logo/
+PaginaLoginWeb/homepage/
 ```
 
 ## 🎨 Características de Design
