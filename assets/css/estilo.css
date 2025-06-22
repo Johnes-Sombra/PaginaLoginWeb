@@ -1,28 +1,31 @@
+/* Resetando margens e configurando o layout principal */
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100vh; /* Altura total da viewport */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #f857a6, #a72be5);
+  justify-content: center; /* Centralização horizontal */
+  align-items: center; /* Centralização vertical */
+  background: linear-gradient(to right, #f857a6, #a72be5); /* Gradiente de fundo */
   font-family: Arial, sans-serif;
 }
 
+/* Container principal do formulário de login */
 .login-container {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+  backdrop-filter: blur(10px); /* Efeito de vidro fosco */
   border-radius: 20px;
   padding: 30px;
   width: 100%;
-  max-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px; /* Largura máxima para responsividade */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
 }
 
+/* Área das logos */
 .logos {
   display: flex;
   justify-content: space-around;
@@ -31,18 +34,21 @@ body {
   width: 80%;
 }
 
+/* Estilo das imagens de logo */
 .logos img {
   width: 70px;
   height: 70px;
   border-radius: 15px;
-  object-fit: cover;
+  object-fit: cover; /* Mantém proporção da imagem */
 }
 
+/* Seta entre as logos */
 .arrow {
   font-size: 60px;
   color: black;
 }
 
+/* Estilo dos rótulos dos campos */
 label {
   color: #333;
   font-weight: bold;
@@ -51,6 +57,7 @@ label {
   margin-top: 10px;
 }
 
+/* Estilo dos campos de entrada */
 input[type="text"],
 input[type="password"] {
   width: 100%;
@@ -60,21 +67,23 @@ input[type="password"] {
   border-radius: 8px;
   background: #eee;
   font-size: 14px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Inclui padding na largura total */
 }
 
+/* Container dos botões */
 .buttons {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
   gap: 10px;
   justify-content: center;
   width: 100%;
   margin-top: 20px;
 }
 
+/* Estilo base dos botões */
 .btn-login,
 .btn-forgot {
-  flex: 1 1 45%;
+  flex: 1 1 45%; /* Distribui espaço igualmente */
   padding: 10px;
   border-radius: 8px;
   font-size: 14px;
@@ -84,6 +93,7 @@ input[type="password"] {
   text-align: center;
 }
 
+/* Cores específicas dos botões */
 .btn-login {
   background-color: #4CAF50;
   color: white;
@@ -94,6 +104,7 @@ input[type="password"] {
   color: black;
 }
 
+/* Efeitos hover dos botões */
 .btn-login:hover {
   background-color: #3e8e41;
 }
@@ -102,6 +113,7 @@ input[type="password"] {
   background-color: #ffa500;
 }
 
+/* Estilo das mensagens de feedback */
 .message {
   text-align: center;
   margin-top: 15px;
@@ -116,18 +128,18 @@ input[type="password"] {
   color: red;
 }
 
+/* Media query para telas pequenas */
 @media (max-width: 380px) {
   .btn-login,
   .btn-forgot {
-    flex: 1 1 100%;
+    flex: 1 1 100%; /* Botões ocupam largura total */
   }
 
   .logos {
-    /* flex-direction: column; */
     gap: 10px;
   }
 
   .arrow {
-    font-size: 30px;
+    font-size: 30px; /* Reduz tamanho da seta */
   }
 }
